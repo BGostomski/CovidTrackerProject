@@ -149,7 +149,6 @@ public class SymptomsPage extends javax.swing.JFrame {
             pst.setBoolean(1, false);
             if(cough.isSelected())
             {
-                System.out.print("test");
                 pst.setBoolean(1, true);
                 pst.setString(6, ((JTextField)startDate.getDateEditor().getUiComponent()).getText());
             }
@@ -181,13 +180,11 @@ public class SymptomsPage extends javax.swing.JFrame {
             //pst.setString(6, ((JTextField)startDate.getDateEditor().getUiComponent()).getText());
             pst.setDate(7, sqldate);
             
-            System.out.println(pst);
-            
             pst.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Registration Successful");
+            JOptionPane.showMessageDialog(null, "Thank you for submiting");
             
             con.close();
-            
+            setVisible(false);
             dispose();
             
         }catch(Exception e){
