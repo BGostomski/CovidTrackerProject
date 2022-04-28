@@ -173,7 +173,6 @@ public class AdminPage extends javax.swing.JFrame {
     }
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         //getEmails();
-        //SENDGRID_API_KEY = "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";
         Email from = new Email("gostomski_bailey@roberts.edu");
         String subject = "Sending with SendGrid is Fun";
         Email to = new Email("baileygostomski@gmail.com");
